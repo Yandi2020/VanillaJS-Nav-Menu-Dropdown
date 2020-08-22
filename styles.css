@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(img/01.jpeg) no-repeat;
+    background-size: 100%;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.33;
+}
+
+/* style banner */
+.banner{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 3;
+}
+
+.banner h2{
+    color: #fff;
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-align: center;
+}
+
+/* style nav bar */
+.nav-list{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5% 0;
+}
+
+.nav-item{
+    z-index: 3;
+}
+
+.nav-item a{
+    font-size: 2em;
+    font-weight: 750;
+    color: #fff;
+}
+
+.dropdown a{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.dropdown a:hover{
+    color: #62b647;
+    border-bottom: none;
+}
+
+.dropdown li{
+    padding-top: 0.6em;
+}
+
+/* style trigger and dropdown when clicked or hovered */
+.trigger{
+    position: relative;
+}
+
+.trigger::after{
+    content: ">";
+    display: inline-block;
+    position: absolute;
+    left: 103%;
+    top: 5px;
+    font-weight: bold;
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+}
+
+.trigger.active::after{
+    transform: rotate(-90deg);
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown.active{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
