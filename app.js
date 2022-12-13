@@ -32,8 +32,8 @@ const dropdowns = document.querySelectorAll('.nav-item');
 
 dropdowns.forEach(dropdown => {
     const instance = new MenuDropdown(dropdown);
-    //instance.initClick();
-    instance.initHover();
+    instance.initClick();
+    //instance.initHover();
 })
 
 
